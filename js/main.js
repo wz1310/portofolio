@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     let currentSlide = 0;
-    const totalSlides = 6;
+    const totalSlides = 7; // Diperbarui menjadi 7 slide total
     let isScrolling = false;
 
     const sliderTrack = document.getElementById('sliderTrack');
