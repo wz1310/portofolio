@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andri Wiza Novian, S.Kom - Odoo Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome untuk Icon & Navigasi -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar Minimalis Ala Majalah B&W -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">AWN.</div>
+            
+            <!-- Tombol Hamburger Mobile -->
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item active" data-slide="0">Home</a></li>
+                <li><a href="#about" class="nav-item" data-slide="1">About Me</a></li>
+                <li><a href="#skills" class="nav-item" data-slide="2">Keahlian</a></li>
+                <li><a href="#experience" class="nav-item" data-slide="3">Pengalaman</a></li>
+                <li><a href="#education" class="nav-item" data-slide="4">Pendidikan</a></li>
+                <li><a href="#contact" class="nav-item" data-slide="5">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tombol Panah Pudar (Navigation Arrows) -->
+    <button class="slider-arrow arrow-left" id="prevBtn" aria-label="Slide Sebelumnya">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="slider-arrow arrow-right" id="nextBtn" aria-label="Slide Selanjutnya">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <!-- Main Container Slider Horizontal -->
+    <main class="slider-wrapper">
+        <div class="slider-track" id="sliderTrack">
+
+            <!-- Slide 01: Home / Hero -->
+            <section class="slide" id="home">
+                <div class="slide-split">
+                    <div class="slide-image-box">
+                        <img src="assets/images/profile.jpg" alt="Andri Wiza Novian" class="bw-cover-img">
+                    </div>
+                    <div class="slide-text-box">
+                        <!-- <span class="page-indicator">Page | 01</span> -->
+                        <h1 class="main-title">Andri Wiza Novian</h1>
+                        <h3 class="subtitle">Odoo Developer</h3>
+                        <p class="description">
+                            Disiplin dan kerja keras merupakan hal yang selalu saya lakukan dalam setiap pekerjaan 
+                            serta bisa menghasilkan atau memberikan hal yang lebih dari biasanya adalah nilai plus bagi saya sendiri.
+                        </p>
+                        <div class="location-badge">
+                            <i class="fa-solid fa-location-dot"></i> Meruyung, Depok, Jawa Barat
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 02: About Me -->
+            <section class="slide" id="about">
+                <div class="slide-split">
+                    <div class="slide-image-box">
+                        <img src="assets/images/about.jpg" alt="Andri Wiza Novian" class="bw-cover-img">
+                        <!-- Gambar placeholder nuansa grayscale, silakan ganti file gambarnya sesuai selera -->
+                        <!-- <div class="placeholder-artistic-img bg-img-1"></div> -->
+                    </div>
+                    <div class="slide-text-box">
+                        <!-- <span class="page-indicator">Page | 02</span> -->
+                        <h2 class="section-heading">About Me</h2>
+                        <p class="description">
+                            Berpengalaman bertahun-tahun dalam pengembangan sistem ERP menggunakan Odoo, mulai dari versi 13 hingga versi 19. 
+                            Memiliki keahlian mendalam dalam kustomisasi backend Python, integrasi API, manajemen database, hingga konfigurasi server Ubuntu.
+                        </p>
+                        <div class="mini-points">
+                            <div class="point-item">
+                                <h4>01. Profesionalisme</h4>
+                                <p>Komitmen tinggi terhadap ketepatan alur bisnis perusahaan dan efisiensi sistem.</p>
+                            </div>
+                            <div class="point-item">
+                                <h4>02. Solusi Teknis</h4>
+                                <p>Menyelesaikan berbagai tantangan bug, maintenance harian, hingga kustomisasi modul kompleks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 03: Keahlian -->
+            <section class="slide" id="skills">
+                <div class="slide-split">
+                    <div class="slide-image-box">
+                        <img src="assets/images/technologi.jpg" alt="Andri Wiza Novian" class="bw-cover-img">
+                    </div>
+                    <div class="slide-text-box">
+                        <!-- <span class="page-indicator">Page | 03</span> -->
+                        <h2 class="section-heading">Keahlian & Teknologi</h2>
+                        <p class="description">
+                            Deretan teknologi dan kerangka kerja yang dikuasai untuk mendukung pembangunan sistem kustom yang handal dan skalabel.
+                        </p>
+                        <div class="skills-grid-bw">
+                            <span class="bw-tag">Odoo ERP</span>
+                            <span class="bw-tag">Python</span>
+                            <span class="bw-tag">PostgreSQL</span>
+                            <span class="bw-tag">XML</span>
+                            <span class="bw-tag">JavaScript</span>
+                            <span class="bw-tag">jQuery</span>
+                            <span class="bw-tag">CSS</span>
+                            <span class="bw-tag">PHP</span>
+                            <span class="bw-tag">MySQL</span>
+                            <span class="bw-tag">Oracle</span>
+                            <span class="bw-tag">Kivy</span>
+                            <span class="bw-tag">Flet</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 04: Pengalaman Kerja -->
+            <section class="slide" id="experience">
+                <div class="slide-content-full scrollable-content">
+                    <!-- <span class="page-indicator">Page | 04</span> -->
+                    <h2 class="section-heading">Pengalaman Kerja</h2>
+                    <div class="timeline-bw">
+
+                        <div class="timeline-item-bw">
+                            <div class="timeline-meta">
+                                <h3>Technical Odoo ERP</h3>
+                                <span class="comp">PT. Ambrosius Utama</span>
+                                <span class="yr">2025 - Sekarang</span>
+                            </div>
+                            <ul>
+                                <li>Mempelajari flow bisnis yang sedang berjalan dan membantu user dalam implementasi flow ke Odoo sesuai kebutuhan perusahaan.</li>
+                                <li>Kustomisasi Odoo lewat frontend sesuai requirement perusahaan.</li>
+                                <li>Maintenance harian dan penyelesaian masalah/bugs di Odoo.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item-bw">
+                            <div class="timeline-meta">
+                                <h3>Technical Odoo ERP</h3>
+                                <span class="comp">Wujud Unggul (Sidoarjo)</span>
+                                <span class="yr">2023 - 2025</span>
+                            </div>
+                            <ul>
+                                <li>Mempelajari flow sistem yang sedang berjalan dan merancang flow baru sesuai kebutuhan perusahaan.</li>
+                                <li>Kustomisasi modul Odoo sesuai requirement perusahaan dan pembuatan modul baru.</li>
+                                <li>Integrasi antar sistem internal dan eksternal (Contact Mekari) via API.</li>
+                                <li>Maintenance database (vacuum, reindexing), set domain, SSL Odoo, serta controlling server Ubuntu Odoo.</li>
+                                <li>Update dan release modul menggunakan Git.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item-bw">
+                            <div class="timeline-meta">
+                                <h3>Technical Odoo ERP</h3>
+                                <span class="comp">Sanqua Multi Internasional (Jakarta)</span>
+                                <span class="yr">2022 - 2023</span>
+                            </div>
+                            <ul>
+                                <li>Mempelajari flow sistem yang sedang berjalan dan merancang flow baru.</li>
+                                <li>Kustomisasi modul Odoo, pembuatan modul baru, dan integrasi dengan sistem internal via API.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item-bw">
+                            <div class="timeline-meta">
+                                <h3>Technical Odoo ERP</h3>
+                                <span class="comp">Kalbis Institute (Jakarta)</span>
+                                <span class="yr">2021 - 2022</span>
+                            </div>
+                            <ul>
+                                <li>Mempelajari flow sistem dan merancang flow baru sesuai kebutuhan.</li>
+                                <li>Kustomisasi modul Odoo, pembuatan modul baru, dan integrasi via API.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item-bw">
+                            <div class="timeline-meta">
+                                <h3>IT Support</h3>
+                                <span class="comp">PT. Guhring Indonesia (Bekasi)</span>
+                                <span class="yr">2020</span>
+                            </div>
+                            <ul>
+                                <li>Melakukan pemeliharaan dan instalasi alat komputer perusahaan.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item-bw">
+                            <div class="timeline-meta">
+                                <h3>Functional Odoo & Website Developer</h3>
+                                <span class="comp">CV. Praha Siber Mandiri (Padang)</span>
+                                <span class="yr">2019 - 2020</span>
+                            </div>
+                            <ul>
+                                <li>Merancang dan membangun website (Backend & Frontend).</li>
+                                <li>Mempelajari, memahami konsep ERP, dan melakukan implementasi (instalasi & implementor).</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item-bw">
+                            <div class="timeline-meta">
+                                <h3>Online Reporter</h3>
+                                <span class="comp">KOMINFO (Kota Solok)</span>
+                                <span class="yr">2017 - 2019</span>
+                            </div>
+                            <ul>
+                                <li>Membuat berita untuk publikasi website resmi KOMINFO Kota Solok.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 05: Pendidikan -->
+            <section class="slide" id="education">
+                <div class="slide-split">
+                    <div class="slide-image-box">
+                        <img src="assets/images/univ.webp" alt="Andri Wiza Novian" class="bw-cover-img">
+                    </div>
+                    <div class="slide-text-box">
+                        <!-- <span class="page-indicator">Page | 05</span> -->
+                        <h2 class="section-heading">Pendidikan</h2>
+                        <div class="edu-card-bw">
+                            <h3>S1 Sistem Informasi</h3>
+                            <p class="inst">Universitas Putra Indonesia YPTK Padang</p>
+                            <p class="timeframe">2010 - 2014 &bull; IPK: 3.18</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 06: Contact -->
+            <section class="slide" id="contact">
+                <div class="slide-content-full">
+                    <!-- <span class="page-indicator">Page | 06</span> -->
+                    <h2 class="section-heading">My Contact</h2>
+                    <p class="description max-w-600">
+                        Tertarik untuk berkolaborasi dalam pengembangan sistem ERP atau proyek kustomisasi Odoo? Hubungi saya melalui tautan di bawah ini.
+                    </p>
+                    <div class="contact-grid-bw">
+                        <a href="mailto:a002041zano@gmail.com" class="contact-box-bw">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>a002041zano@gmail.com</span>
+                        </a>
+                        <a href="https://wa.me/6281266476929" target="_blank" class="contact-box-bw">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>081266476929</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer Minimalis -->
+    <footer>
+        <p>&copy; 2026 Andri Wiza Novian, S.Kom. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
